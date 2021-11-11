@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { DiceRoll } from 'rpg-dice-roller';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    const dice = new DiceRoll('3d5');
+    const result = dice.total;
+    return (
+      <div>
+        <h1>Dice Roller</h1>
+        <p>O resultado do {dice.notation} é {result}</p>
+        <p>{dice.output}</p>
+      </div>
+    );
+  }
 }
 
 export default App;
