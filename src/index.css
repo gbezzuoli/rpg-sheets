@@ -105,6 +105,26 @@ code {
   font-family: 'Roboto', sans-serif;
 }
 
+.title-vp{
+  font-size: 30px;
+  margin-bottom: -8px;
+  margin-top: -5px;
+  color: rgb(180, 142, 72);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-vp{
+  background-color: rgba(180, 142, 72, 0.815);
+  color: white;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  padding: 10px;
+  border-radius: 6px;
+  flex-flow: column;
+}
+
 .footer{
   position: fixed;
   left: 0;
@@ -141,10 +161,23 @@ code {
 .resume,.att,.skills{
   border: 1px solid rgb(180, 142, 72);
   width: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
+
+.input-vp {width: 292px;}
 
 .logo{
   height: 100px;
   margin: auto;
   margin-top: 20px;
+}
+
+label{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 400px;
+  width: 331px;
+  border: 1px solid rgb(180, 142, 72);
 }
