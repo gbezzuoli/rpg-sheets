@@ -1,0 +1,1 @@
+export {default as Dados } from './Dados';
